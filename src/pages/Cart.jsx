@@ -46,9 +46,9 @@ function Cart() {
       <NavBar />
     
       {cartProducts.length > 0 ? (
-        <Box display="flex" alignItems="center"
+        <Box display="flex" alignItems="center" justifyContent="space-between"
         sx={{
-          p:4,
+          p:5,
           flexDirection: {
             xs : 'column',
             md: 'row',   
@@ -57,7 +57,7 @@ function Cart() {
         >
 
           {/* list product */}
-          <Box width="60%" height="100vh" display="flex" justifyContent="start" alignItems="start">
+          <Box  height="100vh" display="flex" justifyContent="center" alignItems="start">
             <Stack
               spacing={1}
               sx={{
